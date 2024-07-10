@@ -6,6 +6,7 @@
       ansible.builtin.command: id expense
       ignore_errors: true
 
+
     - name: say hello
       ansible.builtin.debug:
          msg: "hello"
