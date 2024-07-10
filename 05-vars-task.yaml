@@ -7,9 +7,9 @@
   tasks:
     - name: tasks from information
       vars: # variables from task level
-        course: "terrforms"
+        course: "Azure"
       ansible.builtin.debug:
-         msg: "I am trainer {{course}} my name is {{ trainer}} course duration is {{duration]}"
+         msg: "I we are learning {{course}} my trainer is {{ trainer}} course duration is {{duration]}."
     - name: information from task level
       ansible.builtin.debug:
-           msg: "I am trainer {{course}} my name is {{ trainer}} course duration is {{duration]}"
+           msg: "I we are learning {{course}} my trainer is {{ trainer}} course duration is {{duration]}."
