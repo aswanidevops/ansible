@@ -1,0 +1,18 @@
+- name: data types
+  hosts: localhost
+  vars:
+    course: "Devops with aws"
+    tools: #list
+      - Ansible
+      - terraform
+      - shell
+    duration: #map
+      months: 3
+      hours: 1.5
+      experience: 8
+    Real project: true
+  tasks:
+   - name: datatypes print variables by using datatypes
+     ansible.builtin.debug:
+        msg: "Hi {{course}} we are using tools {{tools}} course duration {{duration}} real project {{Real project}}."
+
