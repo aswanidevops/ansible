@@ -1,5 +1,7 @@
 - name: Variables from files
   hosts: localhost
+  vars_files:
+    - vars.yaml
   tasks:
     - name: Variables override information
       ansible.builtin.debug:
