@@ -7,7 +7,7 @@
   tasks:
     - name: tasks from information
       vars: # variables from task level
-       course: "terrforms"
+        course: "terrforms"
       ansible.builtin.debug:
          msg: "I am trainer {{course}} my name is {{ trainer}} course duration is {{duration]}"
     - name: information from task level
