@@ -1,5 +1,5 @@
 - name: condition
-  hosts: web
+  hosts: localhost
   vars_prompt:
     name: number
     prompt: enter the number
