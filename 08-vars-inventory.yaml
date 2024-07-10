@@ -2,5 +2,7 @@
   hosts: localhost
   tasks:
     - name: variables getting from inventory file
+      vars:
+         timings: "3.45hrs"
       ansible.builtin.debug:
          msg: "Hi, We are learning {{Course}} from trainer {{Trainer}}, duration is {{Duration}} timing are {{timings}}"
