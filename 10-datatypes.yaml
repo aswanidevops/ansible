@@ -1,16 +1,16 @@
 - name: data types
   hosts: localhost
   vars:
-    course: "Devops with aws"
-    tools: #list
-      - Ansible
-      - terraform
-      - shell
-    duration: #map
-      months: 3
-      hours: 1.5
-      experience: 8
-    real-project: true
+     course: "Devops with aws"
+     tools: #list
+       - Ansible
+       - terraform
+       - shell
+     duration: #map
+       months: 3
+       hours: 1.5
+       experience: 8
+     real-project: true
   tasks:
    - name: datatypes print variables by using a datatypes
      ansible.builtin.debug:
