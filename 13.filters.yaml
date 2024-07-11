@@ -22,3 +22,21 @@
         greetings: "Hello Hi"
       ansible.builtin.debug:
          msg: "{{ greetings | lower}}"
+
+- name: unique numbers
+  hosts: localhost
+  vars:
+    numbers:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 4
+      - 5
+      - 5
+      - 6
+  tasks:
+    - name: Print the unique numbers
+      ansible.builtin.debug:
+         msg: "{{numbers | unique}}"
+
