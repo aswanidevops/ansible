@@ -78,9 +78,9 @@
   tasks:
     - name: before printing
       ansible.builtin.debug:
-         msg: "{{my_list}}"
+          msg: "{{my_list}}"
     - name: after convert
       ansible.builtin.debug:
-         msg: "{{my_list | items2dict}}"
+          msg: "{{my_list | items2dict}}"
 
 
