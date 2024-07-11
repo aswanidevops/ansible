@@ -66,3 +66,21 @@
          msg: "convert the items {{my_dict | dict2items}}"
 
 
+- name: converting the items to dict
+  hosts: localhost
+  vars:
+    my_list:
+      [
+        course: "azure",
+        trainer: "Raghu",
+        duration: "30hrs"
+      ]
+  tasks:
+    - name: before printing
+      ansible.builtin.debug:
+         msg: "{{my_list}}"
+    - name: after convert
+      ansible.builtin.debug:
+         msg: "{{my_list | items2dict}}"
+
+
