@@ -71,9 +71,9 @@
   vars:
     my_list:
       [
-        course: "azure",
-        trainer: "Raghu",
-        duration: "30hrs"
+        { course: "azure"},
+        { trainer: "Raghu"},
+        { duration: "30hrs"}
       ]
   tasks:
     - name: before printing
