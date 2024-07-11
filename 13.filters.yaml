@@ -50,4 +50,19 @@
       ansible.builtin.debug:
          msg: "{{ages | max}} minimum numbers is {{ages | min}}"
 
+- name: convert dictionary into item/lists
+  hosts: localhost
+  vars:
+    my_dict:
+      course: "aws"
+      trainer: "sivakumar"
+      duration: "120hrs"
+  tasks:
+    - name: convert the information from dict to items before converting
+      ansible.builtin.debug:
+         msg: "convert the  dict to items {{my_dict}}"
+    - name: after converting
+      ansible.builtin.debug:
+         msg: "convert the items {{my_dict | dict2items}}"
+
 
