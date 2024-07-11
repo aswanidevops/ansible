@@ -41,4 +41,13 @@
       ansible.builtin.debug:
          msg: "number list is {{numbers | unique}}, numbers1 is  {{numbers1 | unique}}"
 
+- name: maximum numbers and minimum numbers
+  hosts: localhost
+  vars:
+    ages: [23, 68, 89, 100]
+  tasks:
+    - name: print the information maximum amd minimum numbers
+      ansible.builtin.debug:
+         msg: "{{ages | max}} minimum numbers is {{ages | min}}"
+
 
