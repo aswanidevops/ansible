@@ -69,11 +69,10 @@
   hosts: localhost
   vars:
     my_dict:
-      [
-        { course: "azure" },
-        { trainer: "kumar" },
-        { duration: "10hrs" }
-      ]
+      - { key: 'course', value : 'azure' },
+      - { key: 'trainer' , value : "kumar" },
+      - {key: 'duration' , value : "10hrs" }
+
 
   tasks:
     - name: convert the information from dict to items before converting
