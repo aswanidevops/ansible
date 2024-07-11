@@ -69,8 +69,8 @@
   hosts: localhost
   vars:
     my_dict:
-      - { key: 'course', value : 'azure' },
-      - { key: 'trainer' , value : "kumar" },
+      - { key: 'course', value : 'azure' }
+      - { key: 'trainer' , value : "kumar" }
       - {key: 'duration' , value : "10hrs" }
 
 
