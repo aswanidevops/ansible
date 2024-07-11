@@ -12,4 +12,4 @@
   tasks:
     - name: print the values in upper-case
       ansible.builtin.debug:
-         msg: "{{greetings}}"
+         msg: "{{greetings | upper }}"
